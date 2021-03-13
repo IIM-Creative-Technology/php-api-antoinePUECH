@@ -3,7 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-
+use Illuminate\Support\Facades\DB;
+use App\Models\{Classe, Student, Note, Subject, Teacher};
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -12,7 +13,13 @@ class DatabaseSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
-        // \App\Models\User::factory(10)->create();
+    {        
+        // Classe::factory()
+        // ->has(Student::factory()->count(20))
+        // ->count(12)
+        // ->create();
+        // Teacher::factory()->count(12)->create();
+        // Subject::factory()->count(38)->create();
+        // Note::factory()->count(1200)->create();
     }
 }
