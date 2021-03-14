@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use App\Models\{Classe, Student, Note, Subject, Teacher};
+use App\Models\{Classe, Student, Note, Subject, Teacher, User};
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -19,7 +19,9 @@ class DatabaseSeeder extends Seeder
         // ->count(12)
         // ->create();
         // Teacher::factory()->count(12)->create();
-        Subject::factory()->count(50)->create();
+        // Subject::factory()->count(50)->create();
         // Note::factory()->count(1200)->create();
+
+        User::factory(3)->create();
     }
 }
