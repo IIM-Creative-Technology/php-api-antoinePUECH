@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
         // ->count(12)
         // ->create();
         // Teacher::factory()->count(12)->create();
-        // Subject::factory()->count(38)->create();
+        Subject::factory()->count(50)->create();
         // Note::factory()->count(1200)->create();
     }
 }

@@ -17,4 +17,15 @@ class Note extends Model
     {
         return $this->belongsTo(Subject::class);
     }
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'note',
+        'student_id',
+        'subject_id',
+    ];
 }

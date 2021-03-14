@@ -17,4 +17,14 @@ class Classe extends Model
     {
         return $this->belongsTo(Subject::class);
     }
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'name',
+        'promotion',
+    ];
 }

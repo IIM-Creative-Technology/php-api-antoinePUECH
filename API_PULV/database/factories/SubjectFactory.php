@@ -23,8 +23,8 @@ class SubjectFactory extends Factory
     {
         return [
             'name' => $this->faker->sentence($nbWords = 3),
-            'date_begin' => $this->faker->dateTimeBetween($format = 'd-m-Y', $startDate = 'now', $endDate = '+3 month'),
-            'date_end' => $this->faker->dateTimeBetween($format = 'd-m-Y', $startDate = 'now', $endDate = '+3 month', $interval = '+5 days'),
+            'date_begin' => $this->faker->dateTimeBetween('now', '+4 months'),
+            'date_end' => $this->faker->dateTimeBetween('+5 days', '+4 months'),
             'promotion' => $this->faker->numberBetween(2021, 2026),
             'teacher_id' => $this->faker->numberBetween(1, 12),
             'classe_id' => $this->faker->numberBetween(2, 13)

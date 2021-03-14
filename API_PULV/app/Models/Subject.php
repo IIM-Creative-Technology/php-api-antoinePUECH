@@ -21,4 +21,18 @@ class Subject extends Model
     {
         return $this->hasMany(Note::class);
     }
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'name',
+        'date_begin',
+        'date_end',
+        'promotion',
+        'teacher_id',
+        'classe_id',
+    ];
 }
